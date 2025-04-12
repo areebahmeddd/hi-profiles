@@ -1,0 +1,11 @@
+src/
+.storybook/
+.github/
+storybook-static/
+.eslintrc.cjs
+.gitignore
+postcss.config.js
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+*.log

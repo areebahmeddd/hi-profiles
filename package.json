@@ -38,7 +38,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "predeploy": "npm run build-storybook && touch ./storybook-static/.nojekyll",
-    "deploy": "gh-pages -d storybook-static -t true"
+    "deploy": "gh-pages -d storybook-static -t true",
+    "prepublishOnly": "npm run build",
+    "release:patch": "npm version patch && git push && git push --tags",
+    "release:minor": "npm version minor && git push && git push --tags",
+    "release:major": "npm version major && git push && git push --tags"
   },
   "dependencies": {
     "react": "^18.2.0",
